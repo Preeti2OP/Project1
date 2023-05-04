@@ -1,0 +1,27 @@
+class Bank_Account:
+    def __init__(self,accno=12378909,name='sita',balance=23000):
+        self.account_no=accno
+        self.name=name
+        self.balance=balance
+    def Deposite(self):
+        self.d=int(input("enter ammount to be deposite"))
+        return (self.d+self.balance)
+    def Withdraw(self):
+        self.w=int(input("enter amount to be withdraw"))
+        return (self.balance-self.w)
+    def bank_fee(self):
+        return ((self.balance*5)/100)
+    def display(self):
+        print("ACCOUNT DETAILS:")
+        print("NAME OF ACCOUNT HOLDER:",self.name)
+        print("ACOCOUNT NO:",self.account_no)
+        print("ACCOUNT BALANCE:",self.balance)
+b=Bank_Account()
+b.display()
+a=b.Deposite()
+print("AMOUNT after deposite:",a)
+c=b.Withdraw()
+print("Amount after withdraw:",c)
+e=b.bank_fee()
+print("BANK FEE:",e)
+
