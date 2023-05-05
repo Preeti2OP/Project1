@@ -1,0 +1,21 @@
+class Area:
+ def _init_(self,l,b):
+    self.length=l
+    self.breadth=b
+ def setDim(self,l1,b1):
+    length1=l1
+    breadth1=b1
+    self.area=length1*breadth1
+    return self
+ def getArea(Self,l2,b2):
+    length2=l2
+    bredth2=b2
+    Self.ar=length2*bredth2
+    return Self
+A=Area(4,5)
+a=A.setDim(5,8)
+print("area:",a.area)
+l=A.getArea(4,5)
+print("area of 2nd rectangle",l.ar)
+
+
